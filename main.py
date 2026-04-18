@@ -15,7 +15,8 @@ class AdvancedDiagnosticApp(ctk.CTk):
         # إعدادات النافذة الرئيسية
         self.title("Breast Cancer AI Diagnostic System - By ABDALLA ADIL ABAS")
         self.geometry("1000x700")
-        self.resizable(False, False)
+        # تم تغيير False إلى True للسماح بتوسيع الشاشة
+        self.resizable(True, True)
 
         # قاموس لتخزين بيانات المريض والميزات الطبية
         self.patient_data = {}
